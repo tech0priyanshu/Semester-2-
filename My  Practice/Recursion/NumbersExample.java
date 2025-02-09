@@ -8,7 +8,15 @@ public class NumbersExample {
 
     }
    static void  number_print(int n){
+    if(n==5){
+        System.out.println(n);
+        return;
+    } // this base condition where excustion end 
      System.out.println(n);
-     number_print(3);
+     
+     number_print(n+1); // this is last function call 
+     //this is  called as Tail recursion 
     }
 }
+ // recursion solution into iteration & vice-versa 
+ // sc is not constant because of recursive call 
